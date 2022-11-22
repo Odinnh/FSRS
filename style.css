@@ -1,0 +1,74 @@
+:root {
+    --grey-100: #2d2d2d;
+    --grey-050: #1f1f1f;
+}
+body {
+    background: var(--grey-050);
+    color: white;
+}
+
+.loadout-slots {
+    display: grid;
+    grid-template-areas:
+        "none1 head none2"
+        "cape necklace ammo"
+        "weapon body shield"
+        "none3 legs none4"
+        "gloves boots ring";
+    width: calc(75px * 3);
+    gap: 5px;
+}
+.slot {
+    width: 75px;
+    height: 75px;
+    background-color: var(--grey-050);
+    border: 1px solid var(--grey-100);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.slot img{
+    max-width:100px;
+    width: 100%;
+    max-height:100px;
+    width: auto
+}
+svg {
+    width: 50px;
+}
+.cape {
+    grid-area: cape;
+}
+.head {
+    grid-area: head;
+}
+.body {
+    grid-area: body;
+}
+.legs {
+    grid-area: legs;
+}
+.gloves {
+    grid-area: gloves;
+}
+.boots {
+    grid-area: boots;
+}
+.ring {
+    grid-area: ring;
+}
+.ammo {
+    grid-area: ammo;
+}
+.shield {
+    grid-area: shield;
+}
+.weapon {
+    grid-area: weapon;
+}
+.necklace {
+    grid-area: necklace;
+}
